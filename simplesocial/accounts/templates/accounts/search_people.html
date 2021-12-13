@@ -1,0 +1,11 @@
+{% extends 'base.html' %}
+  {% block content %}
+    {% if searched %}
+      <h2>You search for {{searched}}</h2><br>
+      {% for a in name %}
+      <h2>{{a}}</h2><br>
+      {% endfor %}
+    {% else %}
+      <h2>You forgot to enter a username</h2>
+    {% endif %}
+  {% endblock %}
